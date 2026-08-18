@@ -91,7 +91,7 @@ export const data = {
       description: 'A live web project — clean, responsive and built for a great user experience.',
       stack: ['React', 'Tailwind CSS', 'Vite'],
       link: 'https://bloom-world.netlify.app',
-      image: '',
+      image: '/images/bloom-world.jpg',
     },
     {
       title: 'Lica',
@@ -100,7 +100,7 @@ export const data = {
       description: 'A live web project — built with a mobile-first approach and clear structure.',
       stack: ['React', 'Tailwind CSS', 'Vite'],
       link: 'https://lica-livid.vercel.app',
-      image: '',
+      image: '/images/lica.jpg',
     },
     {
       title: 'Next Project',
