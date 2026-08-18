@@ -1,5 +1,34 @@
+import { useEffect, useState } from 'react'
 import { data } from '../data/portfolio'
 import { ArrowRightIcon, DownloadIcon } from './icons'
+
+function Typewriter({ words }) {
+  const [text, setText] = useState('')
+  const [index, setIndex] = useState(0)
+  const [deleting, setDeleting] = useState(false)
+
+  useEffect(() => {
+    const word = words[index]
+    let delay = deleting ? 35 : 50
+    if (!deleting && text === word) delay = 1800
+    if (deleting && text === '') delay = 400
+
+    const timer = setTimeout(() => {
+      if (!deleting && text === word) {
+        setDeleting(true)
+      } else if (deleting && text === '') {
+        setDeleting(false)
+        setIndex((prev) => (prev + 1) % words.length)
+      } else {
+        setText(word.slice(0, text.length + (deleting ? -1 : 1)))
+      }
+    }, delay)
+
+    return () => clearTimeout(timer)
+  }, [text, deleting, index, words])
+
+  return <span className="text-primary">{text}</span>
+}
 
 export default function Hero() {
   return (
@@ -24,11 +53,12 @@ export default function Hero() {
             <h1 className="font-display text-4xl leading-tight font-semibold text-foreground sm:text-5xl lg:text-6xl">
               Hi, I'm {data.name}
               <br />
-              <span className="text-primary">
-                I'm a {data.role}
-                <span className="cursor-blink">|</span>
-              </span>
+              <span className="text-primary">I'm a {data.role}</span>
             </h1>
+
+            <p className="mt-4 text-lg font-medium text-muted sm:text-xl">
+              Building <Typewriter words={data.heroSubtexts} />
+            </p>
 
             <p className="mt-6 max-w-xl text-base leading-relaxed text-muted sm:text-lg">
               {data.heroDescription}

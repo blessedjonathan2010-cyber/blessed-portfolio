@@ -12,6 +12,12 @@ export const data = {
   availability: 'Available for Freelance Projects',
   heroDescription:
     'Frontend developer focused on clean, responsive and user-friendly web experiences. I work with HTML, CSS, JavaScript, React, Vite, Tailwind CSS and Git.',
+  heroSubtexts: [
+    'clean, responsive web experiences',
+    'React applications',
+    'pixel-perfect layouts',
+    'modern, user-friendly interfaces',
+  ],
   photo: '/portfolio.png',
 
   // ---- Contact --------------------------------------------------
@@ -44,22 +50,23 @@ export const data = {
     core: ['HTML5', 'CSS3', 'JavaScript', 'React'],
     build: ['Tailwind CSS', 'Vite', 'Responsive Design', 'Flexbox & Grid'],
     workflow: ['Git & GitHub', 'VS Code', 'Component Thinking', 'Debugging'],
-    expanding: ['TypeScript', 'Next.js', 'TanStack Query', 'Testing'],
+    expanding: ['React (deepening)', 'Next.js', 'TypeScript'],
   },
 
   // ---- Skill levels (percent bars) -----------------------------
   // adjust the percentages to match your experience
   levels: [
-    { name: 'HTML5', level: 95 },
-    { name: 'CSS3', level: 90 },
+    { name: 'HTML', level: 95 },
+    { name: 'CSS', level: 90 },
     { name: 'JavaScript', level: 85 },
     { name: 'React', level: 80 },
-    { name: 'Tailwind CSS', level: 88 },
-    { name: 'Vite', level: 85 },
-    { name: 'Git & GitHub', level: 80 },
-    { name: 'Responsive Design', level: 90 },
-    { name: 'Flexbox & Grid', level: 88 },
-    { name: 'Debugging', level: 82 },
+  ],
+
+  // ---- Currently leveling up -----------------------------------
+  learning: [
+    { name: 'React (deepening)', level: 75 },
+    { name: 'Next.js', level: 40 },
+    { name: 'TypeScript', level: 35 },
   ],
 
   // ---- Services -------------------------------------------------
