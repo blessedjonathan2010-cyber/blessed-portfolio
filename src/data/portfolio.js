@@ -62,12 +62,8 @@ export const data = {
     { name: 'React', level: 80 },
   ],
 
-  // ---- Currently leveling up -----------------------------------
-  learning: [
-    { name: 'React (deepening)', level: 75 },
-    { name: 'Next.js', level: 40 },
-    { name: 'TypeScript', level: 35 },
-  ],
+  // ---- Currently leveling up / exploring ------------------------
+  exploring: ['React (deepening)', 'TypeScript', 'Next.js', 'And much more to discover'],
 
   // ---- Services -------------------------------------------------
   services: [

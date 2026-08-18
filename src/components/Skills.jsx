@@ -87,22 +87,19 @@ export default function Skills() {
                 in progress
               </span>
             </div>
-            <div className="mt-6 space-y-5">
-              {data.learning.map((skill) => (
-                <div key={skill.name}>
-                  <div className="mb-2 flex items-center justify-between text-sm">
-                    <span className="font-medium text-foreground">{skill.name}</span>
-                    <span className="font-semibold text-primary/80">{skill.level}%</span>
-                  </div>
-                  <div className="h-2 overflow-hidden rounded-full bg-card-hover">
-                    <div
-                      className="h-full rounded-full bg-gradient-to-r from-primary/40 to-primary/80"
-                      style={{ width: `${skill.level}%` }}
-                    />
-                  </div>
-                </div>
+            <p className="mt-3 text-sm leading-relaxed text-muted">
+              Technologies I'm deepening and things I'd love to explore next.
+            </p>
+            <ul className="mt-5 space-y-3">
+              {data.exploring.map((item) => (
+                <li key={item} className="flex items-center gap-2.5 text-sm text-muted">
+                  <span className="flex h-5 w-5 items-center justify-center rounded-full bg-primary/10 font-semibold text-primary">
+                    +
+                  </span>
+                  {item}
+                </li>
               ))}
-            </div>
+            </ul>
           </div>
         </div>
       </div>
