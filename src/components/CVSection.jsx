@@ -20,8 +20,7 @@ export default function CVSection() {
           </div>
           <a
             href={data.cvFile}
-            target="_blank"
-            rel="noreferrer"
+            download
             className="inline-flex shrink-0 items-center gap-2 rounded-full bg-primary px-7 py-3.5 text-sm font-semibold text-background transition hover:bg-primary-hover"
           >
             <DownloadIcon />
