@@ -7,6 +7,8 @@ export default function Contact() {
     { label: 'LinkedIn', href: data.socials.linkedin, icon: LinkedInIcon },
   ]
 
+  const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${data.email}&su=${encodeURIComponent('Project inquiry')}`
+
   return (
     <section id="contact" className="border-t border-line/60 bg-card/40 py-24">
       <div className="mx-auto max-w-6xl px-6">
@@ -57,7 +59,9 @@ export default function Contact() {
               Email me directly or reach out on the phone — I'll get back to you as soon as I can.
             </p>
             <a
-              href={`mailto:${data.email}?subject=Project inquiry`}
+              href={gmailUrl}
+              target="_blank"
+              rel="noreferrer"
               className="inline-flex items-center gap-2 rounded-full bg-primary px-7 py-3.5 text-sm font-semibold text-background transition hover:bg-primary-hover"
             >
               <MailIcon className="h-4 w-4" />
