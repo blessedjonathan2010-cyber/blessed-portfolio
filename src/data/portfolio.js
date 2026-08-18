@@ -111,6 +111,24 @@ export const data = {
       link: '',
       image: '',
     },
+    {
+      title: 'Expense Tracker',
+      year: '2026',
+      role: 'Developer',
+      description: 'A live web project — track expenses with a clean, responsive interface.',
+      stack: ['React', 'Tailwind CSS', 'Vite'],
+      link: 'https://my-expense-tracker-26.netlify.app',
+      image: '/images/expense-tracker.jpg',
+    },
+    {
+      title: 'Speak Easy',
+      year: '2026',
+      role: 'Developer',
+      description: 'A live web project — built with a mobile-first approach and clear structure.',
+      stack: ['React', 'Tailwind CSS', 'Vite'],
+      link: 'https://bejewelled-salamander-b02579.netlify.app',
+      image: '/images/speak-easy.jpg',
+    },
   ],
 
   // ---- CV -------------------------------------------------------
