@@ -1,28 +1,11 @@
-import { useState } from 'react'
 import { data } from '../data/portfolio'
-import { GitHubIcon, LinkedInIcon, MailIcon, MapPinIcon, ArrowRightIcon } from './icons'
+import { GitHubIcon, LinkedInIcon, MailIcon, MapPinIcon, PhoneIcon, ArrowRightIcon } from './icons'
 
 export default function Contact() {
-  const [form, setForm] = useState({ name: '', email: '', message: '' })
-
-  const handleChange = (e) => {
-    setForm({ ...form, [e.target.name]: e.target.value })
-  }
-
-  const handleSubmit = (e) => {
-    e.preventDefault()
-    const subject = encodeURIComponent(`Project inquiry from ${form.name || 'your portfolio'}`)
-    const body = encodeURIComponent(`${form.message}\n\n— ${form.name}\n${form.email}`)
-    window.location.href = `mailto:${data.email}?subject=${subject}&body=${body}`
-  }
-
   const socials = [
     { label: 'GitHub', href: data.socials.github, icon: GitHubIcon },
     { label: 'LinkedIn', href: data.socials.linkedin, icon: LinkedInIcon },
   ]
-
-  const inputClasses =
-    'w-full rounded-xl border border-line bg-card px-4 py-3 text-sm text-foreground placeholder:text-muted/50 outline-none transition focus:border-primary/50 focus:ring-1 focus:ring-primary/30'
 
   return (
     <section id="contact" className="border-t border-line/60 bg-card/40 py-24">
@@ -41,6 +24,10 @@ export default function Contact() {
               <a href={`mailto:${data.email}`} className="flex items-center gap-3 text-sm text-muted transition hover:text-primary">
                 <MailIcon className="h-4 w-4 text-primary" />
                 {data.email}
+              </a>
+              <a href={`tel:${data.phone}`} className="flex items-center gap-3 text-sm text-muted transition hover:text-primary">
+                <PhoneIcon className="h-4 w-4 text-primary" />
+                {data.phone}
               </a>
               <p className="flex items-center gap-3 text-sm text-muted">
                 <MapPinIcon className="h-4 w-4 text-primary" />
@@ -64,65 +51,27 @@ export default function Contact() {
             </div>
           </div>
 
-          <form
-            onSubmit={handleSubmit}
-            className="rounded-3xl border border-line bg-card p-7 sm:p-9"
-          >
-            <div className="grid gap-5 sm:grid-cols-2">
-              <div>
-                <label htmlFor="name" className="mb-2 block text-xs font-medium uppercase tracking-wider text-muted/70">
-                  Name
-                </label>
-                <input
-                  id="name"
-                  name="name"
-                  type="text"
-                  required
-                  placeholder="Your name"
-                  value={form.name}
-                  onChange={handleChange}
-                  className={inputClasses}
-                />
-              </div>
-              <div>
-                <label htmlFor="email" className="mb-2 block text-xs font-medium uppercase tracking-wider text-muted/70">
-                  Email
-                </label>
-                <input
-                  id="email"
-                  name="email"
-                  type="email"
-                  required
-                  placeholder="you@example.com"
-                  value={form.email}
-                  onChange={handleChange}
-                  className={inputClasses}
-                />
-              </div>
-            </div>
-            <div className="mt-5">
-              <label htmlFor="message" className="mb-2 block text-xs font-medium uppercase tracking-wider text-muted/70">
-                Project details
-              </label>
-              <textarea
-                id="message"
-                name="message"
-                required
-                rows={5}
-                placeholder="Tell me about your project, timeline and goals..."
-                value={form.message}
-                onChange={handleChange}
-                className={`${inputClasses} resize-none`}
-              />
-            </div>
-            <button
-              type="submit"
-              className="mt-6 inline-flex items-center gap-2 rounded-full bg-primary px-7 py-3.5 text-sm font-semibold text-background transition hover:bg-primary-hover"
+          <div className="flex flex-col items-start gap-7 rounded-3xl border border-line bg-card p-8 sm:p-10">
+            <h3 className="font-display text-2xl font-semibold text-foreground">Let's talk about your project</h3>
+            <p className="text-sm leading-relaxed text-muted">
+              Email me directly or reach out on the phone — I'll get back to you as soon as I can.
+            </p>
+            <a
+              href={`mailto:${data.email}?subject=Project inquiry`}
+              className="inline-flex items-center gap-2 rounded-full bg-primary px-7 py-3.5 text-sm font-semibold text-background transition hover:bg-primary-hover"
             >
-              Send message
+              <MailIcon className="h-4 w-4" />
+              Email Me
               <ArrowRightIcon className="h-4 w-4" />
-            </button>
-          </form>
+            </a>
+            <a
+              href={`tel:${data.phone}`}
+              className="inline-flex items-center gap-2 rounded-full border border-line px-7 py-3.5 text-sm font-semibold text-foreground transition hover:border-primary/50 hover:text-primary"
+            >
+              <PhoneIcon className="h-4 w-4" />
+              {data.phone}
+            </a>
+          </div>
         </div>
       </div>
     </section>

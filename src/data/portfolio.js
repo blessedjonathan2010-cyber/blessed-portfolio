@@ -22,6 +22,7 @@ export const data = {
 
   // ---- Contact --------------------------------------------------
   email: 'blessedjonathan2010@gmail.com',
+  phone: '07075852022',
   location: 'Aba, Nigeria — working globally',
   socials: {
     github: 'https://github.com/blessedjonathan2010-cyber',
