@@ -114,7 +114,7 @@ export const data = {
   ],
 
   // ---- CV -------------------------------------------------------
-  cvFile: '/cv.pdf',
+  cvFile: 'https://canva.link/nitw3971d8cmfc5',
   cvNote: 'One page, ATS-friendly, covering skills, stack and selected project outcomes.',
 
   // ---- Misc -----------------------------------------------------

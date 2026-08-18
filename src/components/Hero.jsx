@@ -50,7 +50,8 @@ export default function Hero() {
               </a>
               <a
                 href={data.cvFile}
-                download
+                target="_blank"
+                rel="noreferrer"
                 className="inline-flex items-center gap-2 rounded-full px-4 py-3 text-sm font-medium text-muted transition hover:text-foreground"
               >
                 <DownloadIcon />
