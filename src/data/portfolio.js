@@ -24,7 +24,7 @@ export const data = {
   email: 'blessedjonathan2010@gmail.com',
   location: 'Aba, Nigeria — working globally',
   socials: {
-    github: 'https://github.com/yourusername',
+    github: 'https://github.com/blessedjonathan2010-cyber',
     linkedin: 'https://www.linkedin.com/in/blessed-jonathan-2a2b153a3/',
   },
 
