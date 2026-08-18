@@ -58,6 +58,26 @@ export default function Skills() {
             )
           })}
         </div>
+
+        <div className="mt-16">
+          <h3 className="mb-8 font-display text-xl font-semibold text-foreground">Skill Levels</h3>
+          <div className="grid gap-x-10 gap-y-6 sm:grid-cols-2">
+            {data.levels.map((skill) => (
+              <div key={skill.name}>
+                <div className="mb-2 flex items-center justify-between text-sm">
+                  <span className="font-medium text-foreground">{skill.name}</span>
+                  <span className="font-semibold text-primary">{skill.level}%</span>
+                </div>
+                <div className="h-2 overflow-hidden rounded-full bg-card-hover">
+                  <div
+                    className="h-full rounded-full bg-gradient-to-r from-primary/70 to-primary"
+                    style={{ width: `${skill.level}%` }}
+                  />
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
     </section>
   )

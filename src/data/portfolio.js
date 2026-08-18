@@ -47,6 +47,21 @@ export const data = {
     expanding: ['TypeScript', 'Next.js', 'TanStack Query', 'Testing'],
   },
 
+  // ---- Skill levels (percent bars) -----------------------------
+  // adjust the percentages to match your experience
+  levels: [
+    { name: 'HTML5', level: 95 },
+    { name: 'CSS3', level: 90 },
+    { name: 'JavaScript', level: 85 },
+    { name: 'React', level: 80 },
+    { name: 'Tailwind CSS', level: 88 },
+    { name: 'Vite', level: 85 },
+    { name: 'Git & GitHub', level: 80 },
+    { name: 'Responsive Design', level: 90 },
+    { name: 'Flexbox & Grid', level: 88 },
+    { name: 'Debugging', level: 82 },
+  ],
+
   // ---- Services -------------------------------------------------
   services: [
     {
