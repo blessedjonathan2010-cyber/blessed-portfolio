@@ -73,15 +73,9 @@ export default function Hero() {
                 <ArrowRightIcon />
               </a>
               <a
-                href="#contact"
-                className="inline-flex items-center gap-2 rounded-full border border-line px-6 py-3 text-sm font-semibold text-foreground transition hover:border-primary/50 hover:text-primary"
-              >
-                Let's Talk
-              </a>
-              <a
                 href={data.cvFile}
                 download
-                className="inline-flex items-center gap-2 rounded-full px-4 py-3 text-sm font-medium text-muted transition hover:text-foreground"
+                className="inline-flex items-center gap-2 rounded-full border border-line px-6 py-3 text-sm font-semibold text-foreground transition hover:border-primary/50 hover:text-primary"
               >
                 <DownloadIcon />
                 Download CV
