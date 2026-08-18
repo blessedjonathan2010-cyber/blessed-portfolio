@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { data } from '../data/portfolio'
-import { GitHubIcon, LinkedInIcon, XIcon, MailIcon, MapPinIcon, ArrowRightIcon } from './icons'
+import { GitHubIcon, LinkedInIcon, MailIcon, MapPinIcon, ArrowRightIcon } from './icons'
 
 export default function Contact() {
   const [form, setForm] = useState({ name: '', email: '', message: '' })
@@ -19,7 +19,6 @@ export default function Contact() {
   const socials = [
     { label: 'GitHub', href: data.socials.github, icon: GitHubIcon },
     { label: 'LinkedIn', href: data.socials.linkedin, icon: LinkedInIcon },
-    ...(data.socials.x ? [{ label: 'X', href: data.socials.x, icon: XIcon }] : []),
   ]
 
   const inputClasses =
