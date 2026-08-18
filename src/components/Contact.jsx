@@ -19,7 +19,7 @@ export default function Contact() {
   const socials = [
     { label: 'GitHub', href: data.socials.github, icon: GitHubIcon },
     { label: 'LinkedIn', href: data.socials.linkedin, icon: LinkedInIcon },
-    { label: 'X', href: data.socials.x, icon: XIcon },
+    ...(data.socials.x ? [{ label: 'X', href: data.socials.x, icon: XIcon }] : []),
   ]
 
   const inputClasses =
