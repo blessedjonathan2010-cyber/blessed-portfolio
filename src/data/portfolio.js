@@ -104,6 +104,14 @@ export const data = {
   // Add an optional image: "/images/project-name.jpg"
   projects: [
     {
+      title: 'Kwikfix',
+      year: '2026',
+      role: 'Capstone Project',
+      description: 'Kwikfix is a handyman hiring website to connect handymen and clients.',
+      stack: ['React', 'Tailwind CSS', 'Vite'],
+      link: 'https://kwikfix-9862c.web.app',
+    },
+    {
       title: 'Bloom World',
       year: '2026',
       role: 'Developer',
