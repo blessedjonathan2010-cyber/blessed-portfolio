@@ -147,15 +147,6 @@ export const data = {
       link: 'https://my-expense-tracker-26.netlify.app',
       image: '/images/expense-tracker.jpg',
     },
-    {
-      title: 'Speak Easy',
-      year: '2026',
-      role: 'Developer',
-      description: 'A language learning platform designed to help users improve their language skills through an interactive and user-friendly experience.',
-      stack: ['React', 'Tailwind CSS', 'Vite'],
-      link: 'https://bejewelled-salamander-b02579.netlify.app',
-      image: '/images/speak-easy.jpg',
-    },
   ],
 
   // ---- CV -------------------------------------------------------
