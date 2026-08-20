@@ -59,27 +59,7 @@ export default function Skills() {
           })}
         </div>
 
-        <div className="mt-16 grid gap-12 lg:grid-cols-[1.4fr_1fr]">
-          <div>
-            <h3 className="mb-8 font-display text-xl font-semibold text-foreground">Skill Levels</h3>
-            <div className="grid gap-x-10 gap-y-6 sm:grid-cols-2">
-              {data.levels.map((skill) => (
-                <div key={skill.name}>
-                  <div className="mb-2 flex items-center justify-between text-sm">
-                    <span className="font-medium text-foreground">{skill.name}</span>
-                    <span className="font-semibold text-primary">{skill.level}%</span>
-                  </div>
-                  <div className="h-2 overflow-hidden rounded-full bg-card-hover">
-                    <div
-                      className="h-full rounded-full bg-gradient-to-r from-primary/70 to-primary"
-                      style={{ width: `${skill.level}%` }}
-                    />
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-
+        <div className="mt-16">
           <div className="rounded-2xl border border-dashed border-line bg-card/40 p-6">
             <div className="flex items-center justify-between">
               <h3 className="font-display text-lg font-semibold text-foreground">Currently Leveling Up</h3>

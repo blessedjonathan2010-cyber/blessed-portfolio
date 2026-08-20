@@ -11,7 +11,7 @@ export const data = {
   roleLine: 'and I build for the web',
   availability: 'Available for Freelance Projects',
   heroDescription:
-    'Frontend developer focused on clean, responsive and user-friendly web experiences. I work with HTML, CSS, JavaScript, React, Vite, Tailwind CSS and Git.',
+    'Frontend developer focused on building digital solutions that solve real world problems. I work with HTML, CSS, JavaScript, React, Vite, Tailwind CSS and Git.',
   heroSubtexts: [
     'clean, responsive web experiences',
     'React applications',
@@ -53,15 +53,6 @@ export const data = {
     workflow: ['Git & GitHub', 'VS Code', 'Component Thinking', 'Debugging'],
     expanding: ['React (deepening)', 'Next.js', 'TypeScript'],
   },
-
-  // ---- Skill levels (percent bars) -----------------------------
-  // adjust the percentages to match your experience
-  levels: [
-    { name: 'HTML', level: 95 },
-    { name: 'CSS', level: 90 },
-    { name: 'JavaScript', level: 85 },
-    { name: 'React', level: 80 },
-  ],
 
   // ---- Currently leveling up / exploring ------------------------
   exploring: ['React (deepening)', 'TypeScript', 'Next.js', 'And much more to discover'],
