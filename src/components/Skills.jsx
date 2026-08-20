@@ -58,30 +58,6 @@ export default function Skills() {
             )
           })}
         </div>
-
-        <div className="mt-16">
-          <div className="rounded-2xl border border-dashed border-line bg-card/40 p-6">
-            <div className="flex items-center justify-between">
-              <h3 className="font-display text-lg font-semibold text-foreground">Currently Leveling Up</h3>
-              <span className="rounded-full border border-primary/30 bg-primary/10 px-2.5 py-1 text-[10px] font-medium text-primary">
-                in progress
-              </span>
-            </div>
-            <p className="mt-3 text-sm leading-relaxed text-muted">
-              Technologies I'm deepening and things I'd love to explore next.
-            </p>
-            <ul className="mt-5 space-y-3">
-              {data.exploring.map((item) => (
-                <li key={item} className="flex items-center gap-2.5 text-sm text-muted">
-                  <span className="flex h-5 w-5 items-center justify-center rounded-full bg-primary/10 font-semibold text-primary">
-                    +
-                  </span>
-                  {item}
-                </li>
-              ))}
-            </ul>
-          </div>
-        </div>
       </div>
     </section>
   )

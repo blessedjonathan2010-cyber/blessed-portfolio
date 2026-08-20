@@ -54,9 +54,6 @@ export const data = {
     expanding: ['React (deepening)', 'Next.js', 'TypeScript'],
   },
 
-  // ---- Currently leveling up / exploring ------------------------
-  exploring: ['React (deepening)', 'TypeScript', 'Next.js', 'And much more to discover'],
-
   // ---- Services -------------------------------------------------
   services: [
     {
